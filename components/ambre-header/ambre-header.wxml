@@ -1,0 +1,21 @@
+<!--components/ambre-header/ambre-header.wxml-->
+<view
+class="{{transparent?'transparent':''}}"
+style="height:{{height}}px;">
+  <view
+  class="header"
+  style="height:{{height}}px;background-color:{{background}};color:{{color}};">
+    <view
+    class="flex"
+    style="padding-top:{{status}}px;line-height:{{bar}}px;">
+      <view
+      class="back"
+      wx:if="{{back}}">
+        <text bindtap="handleBack" class="iconfont iconhoutui"></text>
+        <text bindtap="handleIndex" class="iconfont iconshouye1"></text>
+      </view>
+      <view class="title">{{title}}</view>
+      <view></view>
+    </view>
+  </view>
+</view>

@@ -1,4 +1,4 @@
-import './util.js'
+import './utils.js'
 const base = wx.environment()
 let pending = []
 wx.axios = function axios(api, data = {}, extra = {

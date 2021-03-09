@@ -9,7 +9,7 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
-    "ambre-upper": "/components/ambre-upper/ambre-upper",
+    "ambre-header": "/components/ambre-header/ambre-header",
     "van-dialog": "/miniprogram_npm/@vant/weapp/dialog/index",
     "van-overlay": "/miniprogram_npm/@vant/weapp/overlay/index",
     "van-tabbar": "/miniprogram_npm/@vant/weapp/tabbar/index",

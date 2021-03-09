@@ -3,38 +3,35 @@ Component({
   properties: {
     title: {
       type: String,
-      value: 'CONIFER',
+      value: 'HEADER'
     },
-    showBack: {
-      type: Boolean
-    },
-    showSearch: {
+    back: {
       type: Boolean
     },
     transparent: {
       type: Boolean
     },
-    bgColor: {
+    background: {
       type: String,
-      value: 'fff'
+      value: 'ffffff'
     },
-    fontColor: {
+    color: {
       type: String,
       value: '222222'
     }
   },
   data: {
-    statusBarHeight: null,
-    titleBarHeight: null
+    status: null,
+    bar: null
   },
   attached() {
-    this.getSystemInfo()
+    this.handleSystem()
   },
   methods: {
-    back() {
-      let pages = getCurrentPages();
-      let prevPage = pages[pages.length - 2];
-      if (prevPage) {
+    handleBack() {
+      let pages = getCurrentPages()
+      let prev = pages[pages.length - 2]
+      if (prev) {
         wx.navigateBack({})
       } else {
         wx.switchTab({
@@ -42,25 +39,21 @@ Component({
         })
       }
     },
-    toIndex() {
+    handleIndex() {
       wx.switchTab({
         url: '/pages/index/index'
       })
     },
-    getSystemInfo() {
+    handleSystem() {
       let that = this
       wx.getSystemInfo({
         success(res) {
           that.setData({
-            statusBarHeight: res.statusBarHeight,
-            titleBarHeight: res.screenWidth * 88 / 750
+            bar: (res.screenWidth * 88) / 750,
+            status: res.statusBarHeight,
+            height: res.statusBarHeight + (res.screenWidth * 88) / 750
           })
         }
-      })
-    },
-    to(e) {
-      wx.navigateTo({
-        url: '/pages/search/search'
       })
     }
   }

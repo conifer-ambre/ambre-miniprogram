@@ -1,14 +1,5 @@
 /* vanui全局变量 */
 page {
-  /* button */
-  /* --button-primary-color:#000 !important;
-  --button-primary-background-color: #000000 !important;
-  --button-border-radius: 0;
-  --button-primary-border-color: #000000 !important;
-  --button-mini-font-size: @font-size-xs; */
-  /* search */
-  /* --search-background-color:#fff; */
-  /* stepper */
   --stepper-background-color:#fff;
   --stepper-input-width:60rpx;
   /* --stepper-input-font-size:20rpx; */
@@ -30,28 +21,15 @@ page {
 }
 /* search */
 .van-search__content{
-  /* border:1.5px solid #222; */
   box-shadow: 0 1px 2px 0 rgba(148, 148, 148, 0.1);
   border-radius: 30rpx !important;
 }
-/* .van-search__action{
-  width:100rpx !important;
-  line-height:0px !important;
-  text-align: center !important;
-} */
-/* .van-search__action .iconfont{
-  font-size:40rpx;
-} */
 .van-sticky-wrap--fixed{
   top: 88rpx!important;
 }
 /* stepper */
 .van-stepper{
   border:1px solid #E0E1E6;
-}
-.van-stepper__input{
-  /* font-size:24rpx !important; */
-  /* background-color:#F6F7F8 !important; */
 }
 .van-stepper__minus:before,.van-stepper__plus:before {
   width:7px !important;

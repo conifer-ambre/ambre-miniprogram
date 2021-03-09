@@ -1,6 +1,6 @@
 //app.js
-import './common/axios.js'
-import './common/util.js'
+import './api.js'
+import './utils.js'
 App({
   onLaunch: function () {
   },
