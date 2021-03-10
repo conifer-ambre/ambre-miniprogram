@@ -1,4 +1,5 @@
 import Dialog from './miniprogram_npm/@vant/weapp/dialog/dialog';
+
 wx.dialog = Dialog
 
 wx.pay = (obj) => {

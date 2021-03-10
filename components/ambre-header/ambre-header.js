@@ -13,11 +13,11 @@ Component({
     },
     background: {
       type: String,
-      value: 'ffffff'
+      value: '#ffffff'
     },
     color: {
       type: String,
-      value: '222222'
+      value: '#222222'
     }
   },
   data: {

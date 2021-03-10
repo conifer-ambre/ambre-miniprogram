@@ -6,13 +6,13 @@ style="height:{{height}}px;">
   class="header"
   style="height:{{height}}px;background-color:{{background}};color:{{color}};">
     <view
-    class="flex"
-    style="padding-top:{{status}}px;line-height:{{bar}}px;">
+    class="flex-ju-al-between"
+    style="padding-top:{{status}}px;">
       <view
       class="back"
       wx:if="{{back}}">
-        <text bindtap="handleBack" class="iconfont iconhoutui"></text>
-        <text bindtap="handleIndex" class="iconfont iconshouye1"></text>
+        <text bindtap="handleBack" class="iconfont icon-chevron-left"></text>
+        <text bindtap="handleIndex" class="iconfont icon-home"></text>
       </view>
       <view class="title">{{title}}</view>
       <view></view>

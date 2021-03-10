@@ -7,12 +7,12 @@
   position: fixed;
 }
 .back {
-  margin-left: 30rpx;
-  border: 1rpx solid rgb(229, 229, 229);
-  height: 63rpx;
-  margin-top: 13rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #E5E5E5;
+  box-sizing: border-box;
+  height: 60rpx;
+  margin-top: 10rpx;
   border-radius: 50rpx;
-  line-height: 43rpx;
   z-index: 99 !important;
 }
 .transparent {
@@ -24,13 +24,12 @@
   display: inline-block;
   text-align: center;
   margin: 10rpx 0;
-  width: 85.7rpx;
-  height: 43rpx;
+  padding:0 25rpx;
   vertical-align: middle;
 }
 .iconfont:first-child {
-  font-size: 26rpx;
-  border-right: 1rpx solid rgb(229, 229, 229);
+  font-size: 36rpx;
+  border-right: 1rpx solid #E5E5E5;
 }
 .iconfont:last-child {
   font-size: 36rpx;
