@@ -6,7 +6,7 @@ style="height:{{height}}px;">
   class="header"
   style="height:{{height}}px;background-color:{{background}};color:{{color}};">
     <view
-    class="flex-ju-al-between"
+    class="flex-justify-align-between"
     style="padding-top:{{status}}px;">
       <view
       class="back"
@@ -14,7 +14,7 @@ style="height:{{height}}px;">
         <text bindtap="handleBack" class="iconfont icon-chevron-left"></text>
         <text bindtap="handleIndex" class="iconfont icon-home"></text>
       </view>
-      <view class="title">{{title}}</view>
+      <view class="title" style="top:{{status + 10}}px">{{title}}</view>
       <view></view>
     </view>
   </view>
